@@ -1,0 +1,1033 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArchPortfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="">
+    <link rel="icon" href="web-icon.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+</head>
+<body>
+
+   
+
+<!-- Navigation Section and Hero-content-->
+
+    <div class="container">
+        <div class="container-cover"></div>
+        <div class="navbar" id="nav">
+
+            <div id="main-logo">
+
+            <p class="main-logo"  onclick="location.href='#back'"> ARCHE </p>
+            </div>
+
+            <i class="fa-solid fa-bars-progress"></i>
+
+            <ul id="sidemenu">
+                <img class="side-logo" src="main-logo.png" onclick="location.href='#back'">
+                <li><a href="#about-bookmark">about me</a></li>
+                <li><a href="#works">WORKS</a></li>
+                <li><a href="#services-bookmark">skills</a></li>
+                <li><a href="#contact-cut">contacts</a></li>
+         
+                <div class="exit-btn-special">
+
+                    <i class="fa-regular fa-x"></i>
+                </div>  
+            </ul> 
+            
+        
+        </div>
+
+<!---------Script for navbar---------->
+
+        <script>
+
+            var sidemenu = document.getElementById('sidemenu');
+
+            var click = document.querySelector('.fa-solid');
+
+            var exit = document.querySelector('.fa-regular');
+
+            var exitBox = document.querySelector('.exit-btn');
+
+
+        
+            click.onclick = function openside(){
+
+               sidemenu.style.left = "-25px";
+                exitBox.style.right = "-30px";
+               document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+
+            }
+
+            exit.onclick = function closeside(){
+                sidemenu.style.left = "-170px";
+                exitBox.style.right = "0";
+            }
+
+
+
+        </script>
+
+<!------------------->
+        <div class="hero-parent" id="back">
+
+            <div class="circle-1 object" data-value="-2"></div>
+            <div class="circle-2 object" data-value="6"></div>
+            <div class="circle-3 object" data-value="4"></div>
+            <div class="square object" data-value="-6"></div>
+
+            <span class="name"> Hello! I'm a <span class="color-txt"> </span></span>
+
+            <div class="hero-heading">
+                 <h1><span id="typing"></span></h1>
+            </div>
+
+                <p> Aspiring Front-end Web Developer, Graphic Designer, and Illustrator. I can code and design a Website using HTML, CSS, and brief Javascript, I can also Illustrate, and Design a Digital Ads, Poster, and Digital Flyers.
+                </p>
+
+                <div class="button-holder">
+                    <div class="btn-holder-child1">
+                        <a href="myCV.pdf" target="_blank" ><button type="button"class="resume-btn"> <span id="btn-txt">View Resume</span> <img src="foreign.png" alt=""></button> </a>
+                       
+                    </div>
+
+                    <button type="button" onclick="location.href='#works'" class="works-btn"> <span id="btn-txt"> See my Works </span> <img src="arrow-down.png" alt=""> </button>
+
+               
+                </div>
+        
+    </div>
+        
+            <!-- Script for Hero content-->
+<script>
+
+    var typed = new Typed('#typing', {
+   strings: ["Web Designer", "Graphic Designer", "Illustrator"],
+   typeSpeed: 80,
+   backSpeed: 80,
+   loop: true
+ });
+</script>
+
+    </div>
+
+<!-- Navigation Section and Hero-content END-->
+
+<!-- About-Section-->
+    <div class="primary-about-section" id="about-bookmark">
+
+
+            <div class="about-content">
+
+            <div class="about-txt-name">
+                <p> ABOUT ME </p>
+                <p id="myName"> I'M ARCHE M. ANGANA
+                <br></p>
+                <span class="job-title">WEB DESIGNER & GRAPHIC DESIGNER</span>
+                
+                    
+            </div>
+               
+        
+            <div class="about-navigation"> 
+            
+                <p> I am currently 3rd year BSGD student at CEBU TECHNOLOGICAL UNIVERSITY Main - Campus and a aspiring web designer and graphic designer. With my knowledge, I strive to give you with the best service possible. 
+                </p>
+
+                <br>
+
+                <p> I have a desire for knowledge and a commitment to put that knowledge into action. My passion for understanding the complexities of web design/development and Graphic Design drives my belief that mindfulness in the workplace is key to success. I, too, consider myself a "forever student," ready to learn new design approaches and techniques while keeping up with design trends. </p>
+
+                <p class="media-head">CHECK OUT MY SOCIALS</p>
+
+                <div class="media-section">
+
+                    <div class="img-holder">
+                        <a href="https://www.behance.net/archeangana" target="_blank"><img class="media-img-1 media" src="behance.png" alt="behance"></a>
+                    </div>
+
+                    <div class="img-holder">
+                        <a href="https://twitter.com/arch__01" target="_blank"><img class="media-img-2 media" src="twitter-nobg.png" alt=""></a>
+                    </div>
+
+                    <div class="img-holder">
+                        <a href="https://www.linkedin.com/in/arche-angana-8a3297232/" target="_blank"><img class="media-img-3 media" src="linkedin.png" alt=""></a>
+                    </div>
+
+                </div>
+               
+            </div>
+            </div>  
+            </div>
+            
+<!-- About-Section boundary-->
+
+<!-- My Skills Section -->
+            
+            <div class="skillContainer">
+                <h2 class="mainHeader"> MY SKILLS </h2>
+
+                <div class="skillGrid">
+
+                
+                   <div class="webDesign Grid">
+                    <div class="header-wrapper">
+                    <div class="oval"></div>
+                    <h2 class="header-1 grid-header">WEB DESIGN</h2>
+                    </div>
+                    <p class="par-1 par">Planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience.</p>
+                   </div>
+
+
+                   <div class="GraphicDesign Grid">
+                    <div class="header-wrapper">
+                    <div class="oval"></div>
+                    <h2 class="header-2 grid-header">GRAPHIC DESIGN</h2> </div>
+
+                    <p class="par-2 par">The art of communication, stylizing, and problem solving through the use of type and image.</p> 
+                   </div>
+
+
+                   <div class="HANDS-DRAW Grid">
+
+                    <div class="header-wrapper">
+                    <div class="oval"></div>
+                    <h2 class="header-3 grid-header">HANDS DRAW</h2> </div>
+                    <p class="par-3 par">Design process sketches. Digital art depicting character and the emotion they portray.</p>
+                   </div>
+                   
+
+                   <div class="ADOBE-AFTER-EFFECTS Grid">
+                    <div class="header-wrapper">
+                    <div class="oval"></div>
+                    <h2 class="header-4 grid-header">ADOBE AFTER EFFECTS</h2> </div>
+                    <p class="par-4 par">Production, conceptualizing, animating videos and logo.</p>
+                   </div>
+
+
+                   <div class="htmlCSS Grid">
+                    <div class="header-wrapper">
+                    <div class="oval"></div>
+                    <h2 class="header-5 grid-header">VALID HTML/CSS CODE</h2></div>
+                    <p class="par-5 par">Develop website and applying design through code make it interactive and responsive.</p> 
+                   </div>
+
+
+                   <div class="VIDEO-EDTTING Grid">
+
+                    <div class="header-wrapper">
+                    <div class="oval"></div>
+                    <h2 class="header-6 grid-header">VIDEO EDITTING</h2></div>
+
+                    <p class="par-6 par">Great sense of Timing, Transition and Typography providing neat flow of video.</p>
+                   </div>
+                   </div>
+
+                </div>
+                </div>
+
+<!-- New Skills Section-->
+
+<div class="new-skill-container">
+
+    <div class="division-txt">
+        <h3> Software Expertise </h3>
+        <p>I can use well enough the softwares below</p>
+    </div>
+  
+
+    <div class="division-wrapper">
+
+    <div class="divition-1">
+        <span><img src="illustrator.png" alt="Adobe Illustrator"></span>
+        <span><img src="visual-studio.png" alt="VS Code"></span>
+        <span><img src="solidoworklogo.png" alt="Solidworks"></span>
+        <span><img src="after-effects.png" alt="Adobe After Effects"></span>
+    </div>
+
+    <div class="division-2">
+        <span><img src="indesign.png" alt="Adobe Indesign"></span>
+        <span><img src="coreldraw.png" alt="Corel Draw"></span>
+        <span><img src="figma.png" alt="Figma"></span>
+        <span><img src="office.png" alt="MS Office"></span>
+    </div>
+            
+</div>
+
+</div>
+
+
+<!-- The Works -->
+<div class="works-container" id="works">
+
+    <div class="work-header">
+        <h1> Works </h1>
+        <p class="work-parag">All of my design work, from websites to brochures for marketing, is available here. Check them out, especially the information on my design approach and specifics. </p>
+    </div>
+
+    <div class="works-grid">
+        
+        <div class="works-content holder-1">
+            <img class="light" onclick="lightBox()" src="Fit Arc.png" alt="">
+            <p class="work-txt-header">BRAND DESIGN</p>
+            <p class="work-txt">Lorem ipsum dolor sit amet </p>
+        </div>
+
+        <div class="works-content holder-2">
+            <img class="light" onclick="lightBox2()" src="Fit Arc.png" alt="">
+            <p class="work-txt-header">BRAND DESIGN</p>
+            <p class="work-txt">Lorem ipsum dolor sit amet </p>
+        </div>
+
+        <div class="works-content holder-3">
+            <img class="light" onclick="lightBox3()" src="Fit Arc.png" alt="">
+            <p class="work-txt-header">BRAND DESIGN</p>
+            <p class="work-txt">Lorem ipsum dolor sit amet </p>
+        </div>
+
+        <div class="works-content holder-4">
+            <img class="light" onclick="lightBox4()" src="Fit Arc.png" alt="">
+            <p class="work-txt-header">BRAND DESIGN</p>
+            <p class="work-txt">Lorem ipsum dolor sit amet </p>
+        </div>
+
+        <div class="works-content holder-5">
+            <img class="light" onclick="lightBox5()" src="Fit Arc.png" alt="">
+            <p class="work-txt-header">BRAND DESIGN</p>
+            <p class="work-txt">Lorem ipsum dolor sit amet </p>
+        </div>
+
+        <div class="works-content holder-6">
+            <img class="light" onclick="lightBox6()" src="Fit Arc.png" alt="">
+            <p class="work-txt-header">BRAND DESIGN</p>
+            <p class="work-txt">Lorem ipsum dolor sit amet </p>
+        </div>
+    </div>
+    </div>
+
+<!-- 1 Light box parent-->
+<div class="lighbox-holder-main-container">
+
+<div class="lightbox-container-1 beholder">
+    <div class="lightbox-content lighter">    
+    </div>
+
+    <button class="lightbox-exit out">X</button>
+
+</div>
+
+
+ <!-- 2 Light box parent-->
+
+<div class="lightbox-container-2 beholder">
+   <div class="lightbox-content-2 lighter">    
+    </div>
+            
+    <button class="lightbox-exit-2 out">X</button>
+
+    </div>
+
+    <!-- BG OPACITY -->
+    <div class="opaque"></div>
+
+     <!-- 3 Light box parent-->
+
+<div class="lightbox-container-3 beholder">
+    <div class="lightbox-content-3 lighter">    
+     </div>
+             
+     <button class="lightbox-exit-3 out">X</button>
+     </div>
+
+    <!-- 4 Light box parent-->
+
+<div class="lightbox-container-4 beholder">
+    <div class="lightbox-content-4 lighter">    
+     </div>
+             
+     <button class="lightbox-exit-4 out">X</button>
+     </div>
+
+     <!-- 5 Light box parent-->
+
+<div class="lightbox-container-5 beholder">
+    <div class="lightbox-content-5 lighter">    
+     </div>
+             
+     <button class="lightbox-exit-5 out">X</button>
+     </div>
+
+    <!-- 6 Light box parent-->
+
+<div class="lightbox-container-6 beholder">
+    <div class="lightbox-content-6 lighter">    
+     </div>
+             
+     <button class="lightbox-exit-6 out"><p>X</p></button>
+     </div>
+
+     </div>
+
+<script>
+    document.addEventListener("mousemove", parallax);
+    function parallax(e){
+        document.querySelectorAll(".object").forEach(function(move){
+
+            var moving_value = move.getAttribute("data-value");
+            var x = (e.clientX * moving_value) / 250;
+            var y = (e.clientY * moving_value) / 250;
+
+            move.style.transform = "translateX(" + x + "px) translateY(" + y + "px)";
+        });
+    }
+
+// LightBox VARIABLES
+
+    var lightbox = document.querySelectorAll(".light");
+    var wrapper = document.querySelector(".lightbox-container-1");
+    var exit = document.querySelector(".lightbox-exit");
+    var content = document.querySelector(".lightbox-content");
+    var opaque = document.querySelector(".opaque");
+
+
+ // Light Box 1
+
+    function lightBox() {
+     wrapper.style.transform = "scale(1)";
+     exit.style.opacity = "1"; 
+     opaque.style.display = "block";  
+    }
+
+    exit.onclick = function exitBox() {
+        if (wrapper.style.transform = "scale(1)") {
+        wrapper.style.transform = "scale(0)"
+        exit.style.opacity = "0";
+        opaque.style.display = "none"; 
+        }}
+
+// Light Box 2
+    var wrapper2 = document.querySelector(".lightbox-container-2");
+    var exit2 = document.querySelector(".lightbox-exit-2");
+
+    function lightBox2() {
+
+     wrapper2.style.transform = "scale(1)";
+     exit2.style.opacity = "1";
+     opaque.style.display = "block"; 
+
+    }
+
+    exit2.onclick = function exitBox2() {
+        if (wrapper2.style.transform == "scale(1)") {
+        wrapper2.style.transform = "scale(0)"
+        exit2.style.opacity = "0";
+        opaque.style.display = "none"; 
+
+        }}
+
+// Light Box 3
+
+    var wrapper3 = document.querySelector(".lightbox-container-3");
+    var exit3 = document.querySelector(".lightbox-exit-3");
+
+    function lightBox3() {
+     wrapper3.style.transform = "scale(1)";
+     exit3.style.opacity = "1";
+     opaque.style.display = "block"; 
+    }
+
+    exit3.onclick = function exitBox3() {
+        if (wrapper3.style.transform == "scale(1)") {
+        wrapper3.style.transform = "scale(0)"
+        exit3.style.opacity = "0";
+        opaque.style.display = "none"; 
+        }}
+
+// Light Box 4
+
+    var wrapper4 = document.querySelector(".lightbox-container-4");
+    var exit4 = document.querySelector(".lightbox-exit-4");
+
+    function lightBox4() {
+     wrapper4.style.transform = "scale(1)";
+     exit4.style.opacity = "1";
+     opaque.style.display = "block"; 
+    }
+
+    exit4.onclick = function exitBox4() {
+        if (wrapper4.style.transform == "scale(1)") {
+        wrapper4.style.transform = "scale(0)"
+        exit4.style.opacity = "0";
+        opaque.style.display = "none"; 
+        }}
+ 
+// Light Box 5
+
+    var wrapper5 = document.querySelector(".lightbox-container-5");
+    var exit5 = document.querySelector(".lightbox-exit-5");
+
+    function lightBox5() {
+     wrapper5.style.transform = "scale(1)";
+     exit5.style.opacity = "1";
+     opaque.style.display = "block"; 
+    }
+
+    exit5.onclick = function exitBox5() {
+        if (wrapper5.style.transform == "scale(1)") {
+        wrapper5.style.transform = "scale(0)"
+        exit5.style.opacity = "0";
+        opaque.style.display = "none"; 
+        }}
+
+// Light Box 6
+
+    var wrapper6 = document.querySelector(".lightbox-container-6");
+    var exit6 = document.querySelector(".lightbox-exit-6");
+
+    function lightBox6() { 
+     wrapper6.style.transform = "scale(1)";
+     exit6.style.opacity = "1";
+     opaque.style.display = "block"; 
+    }
+
+    exit6.onclick = function exitBox6() {
+        if (wrapper6.style.transform == "scale(1)") {
+        wrapper6.style.transform = "scale(0)"
+        exit6.style.opacity = "0";
+        opaque.style.display = "none"; 
+        }}
+
+</script>
+
+<!-- Illustration Section -->
+
+<div class="illustration-wrapper">
+  
+    <div class="illustration-container">
+
+        <div class="illustration-header">
+            <p>Here's my Character Design</p>
+        </div>
+
+        <div class="illustration-img4 lo">
+            <img src="#" alt="">
+        </div>
+
+        <div class="illustration-img3 lo">
+            <img src="#" alt="">
+        </div>
+
+        <div class="illustration-img2 lo">
+            <img src="#" alt="">
+        </div>
+
+        <div class="illustration-img1 lo">
+            <img src="#" alt="">
+        </div>
+
+        <div class="blank-grid"></div>
+
+    <div class="illustration-content-parent">
+
+    <div class="illustration-text1 illus lus1">
+        <p><span class="num1 num">01</span><br> FULL NAME. CLASS</p>
+    </div>
+
+    <div class="illustration-text2 illus lus2">
+        <p><span class="num2 num">02</span><br> FULL NAME. CLASS</p>
+    </div>
+
+    <div class="illustration-text3 illus lus3">
+        <p><span class="num3 num">03</span><br> FULL NAME. CLASS</p>
+    </div>
+
+    <div class="illustration-text4 illus lus4">
+        <p><span class="num4 num">04</span><br> FULL NAME. CLASS.</p>
+    </div>
+
+    </div>
+    </div>
+
+    <script>
+
+        var illu1 = document.querySelector(".illustration-img1");
+        var illu2 = document.querySelector(".illustration-img2");
+        var illu3 = document.querySelector(".illustration-img3");
+        var illu4 = document.querySelector(".illustration-img4");
+        
+        const txt1 = document.querySelector(".num1");
+        const txt2 = document.querySelector(".num2");
+        const txt3 = document.querySelector(".num3");
+        const txt4 = document.querySelector(".num4");
+
+        let illuTxt1 = document.querySelector(".illustration-text1");
+        let illuTxt2 = document.querySelector(".illustration-text2");
+        let illuTxt3 = document.querySelector(".illustration-text3");
+        let illuTxt4 = document.querySelector(".illustration-text4");
+    
+// 1 illus
+
+        illuTxt1.onclick = function appear1() {
+            
+            illu1.style.opacity = "";
+            illu1.style.transform = "";
+            illu2.style.opacity = "0";
+            illu3.style.opacity = "0";
+            illu4.style.opacity = "0";
+            illu4.style.transform = "translateX(-100px)";
+            illuTxt2.style.backgroundColor = "transparent";
+            illuTxt3.style.backgroundColor = "transparent";
+            illuTxt4.style.backgroundColor = "transparent";
+            illuTxt1.style.backgroundColor = "#142c5a";
+            illuTxt1.style.color = "white";
+            txt1.style.color = "orange";
+
+            // color text 2 / 3 / 4
+            illuTxt2.style.color = "black";
+            illuTxt3.style.color = "black";
+            illuTxt4.style.color = "black";
+            txt2.style.color = "black";
+            txt3.style.color = "black";
+            txt4.style.color = "black";
+
+        }
+
+// 2 illus
+
+        illuTxt2.onclick = function appear2() {
+            
+            illu1.style.opacity = "0";
+            illu1.style.transform = "translateX(-100px)";
+            illu2.style.transform = "";
+            illu2.style.opacity = "1";
+            illu3.style.opacity = "0";
+            illu4.style.opacity = "0";
+            illuTxt1.style.backgroundColor = "transparent";
+            illuTxt3.style.backgroundColor = "transparent";
+            illuTxt4.style.backgroundColor = "transparent";
+            illuTxt2.style.backgroundColor = "#142c5a";
+            illuTxt2.style.color = "white";
+            txt2.style.color = "orange";
+
+            // color text 1 /3 / 4
+            illuTxt1.style.color = "black";
+            illuTxt3.style.color = "black";
+            illuTxt4.style.color = "black";
+            txt1.style.color = "black";
+            txt3.style.color = "black";
+            txt4.style.color = "black";
+
+        }
+
+// 3 illus
+
+        illuTxt3.onclick = function appear3() {
+
+            illu1.style.opacity = "0";
+            illu2.style.opacity = "0";
+            illu2.style.transform = "translateX(-100px)";
+            illu3.style.transform = "";
+            illu3.style.opacity = "1";
+            illu4.style.opacity = "0";
+            illuTxt1.style.backgroundColor = "transparent";
+            illuTxt2.style.backgroundColor = "transparent";
+            illuTxt4.style.backgroundColor = "transparent";
+            illuTxt3.style.backgroundColor = "#142c5a";
+            illuTxt3.style.color = "white";
+            txt3.style.color = "orange";
+
+             // color text 1 / 2 / 4
+             illuTxt1.style.color = "black";
+             illuTxt2.style.color = "black";
+             illuTxt4.style.color = "black";
+             txt2.style.color = "black";
+             txt1.style.color = "black";
+             txt4.style.color = "black";
+        }
+     
+// 4 illus
+
+illuTxt4.onclick = function appear3() {
+
+            illu1.style.opacity = "0";
+            illu2.style.opacity = "0";
+            illu2.style.transform = "translateX(-100px)";
+            illu3.style.transform = "translateX(-100px)";
+            illu3.style.opacity = "0";
+            illu4.style.transform = "";
+            illu4.style.opacity = "1";
+            
+            // background color
+            illuTxt1.style.backgroundColor = "transparent";
+            illuTxt2.style.backgroundColor = "transparent";
+            illuTxt3.style.backgroundColor = "transparent";
+            illuTxt4.style.backgroundColor = "#142c5a";
+            illuTxt4.style.color = "white";
+            txt4.style.color = "orange";
+
+            // color text 1 / 2 / 3
+            illuTxt1.style.color = "black";
+            illuTxt2.style.color = "black";
+            illuTxt3.style.color = "black";
+            txt3.style.color = "black";
+            txt2.style.color = "black";
+            txt1.style.color = "black";
+        }
+
+if (illu1.style.backgroundColor = "yellow") {
+    illuTxt1.style.backgroundColor = "#142c5a";
+    illuTxt1.style.color = "white";
+    txt1.style.color = "orange";
+
+} 
+
+    </script>
+
+</div>
+
+<!-- Logo Design-Section-->
+ 
+    <div class="primary-portfolio-section">
+
+
+
+        <div class="logo-grid-wrapper">
+
+
+        <div class="main-container-logo-section">
+
+            <div class="logo-main-container">
+            <div class="logo-text-container">
+                <h1>LOGO DESIGN</h1>
+                <p> I can help you create a logo that is both visually appealing and memorable. This will make your company stand out from the competition and attract new customers. I use Adobe Illustrator to design logos that are scalable and can be used on a variety of marketing materials.</p>
+        
+            </div>
+
+        <div class="slideshow-container">
+
+            <!-- images -->
+            <div class="mySlides fade" id="main1">
+             
+              <div class="content omega1">
+                <img src="hangerlogo-01.png" alt="Hanger-logo">
+              </div>
+             
+              <div class="text"></div>
+            </div>
+          
+            <div class="mySlides fade">
+             
+              <div class="content omega2">
+                <img src="turtlelogo-01.png" alt="turtle">      
+              </div>
+
+        
+            </div>
+          
+            <div class="mySlides fade">
+            
+              <div class="content omega3"> <img src="musiclogo1-01.png" alt="music"></div>
+              <div class="text"></div>
+            </div>
+
+            <div class="mySlides fade">
+              
+                <div class="content omega4">
+                    <img src="finarclogo-01.png" alt="finarc"></div>
+               
+              </div>
+
+              <div class="mySlides fade">
+            
+                <div class="content omega5">
+                     <img src="ashoplogo-01.png" alt="ashop-logo"></div>
+                <div class="text"></div>
+              </div>
+
+              <div class="mySlides fade">
+            
+                <div class="content omega6">
+                    <img src="ramen222-01.png" alt="ramen-logo">
+                </div>
+                <div class="text"></div>
+              </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+               <!-- The dots -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(4)"></span>
+            <span class="dot" onclick="currentSlide(5)"></span>
+            <span class="dot" onclick="currentSlide(6)"></span>     
+          </div>
+
+          </div>
+          <br>
+          
+
+</div>
+    <div class="border-bottom"></div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+
+<!-- Script for carousel-->
+
+<script>
+    let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"  ;
+  dots[slideIndex-1].className += " active";
+}
+
+</script>
+
+<!-- Specialty Boundary -->
+
+<div class="col-3-grid-wrapper">
+
+    <div class="special-header">
+        <h1 class="col-3-txt">SPECIALIZATION</h1>
+    </div>
+
+    <div class="col-3-grid-container">
+
+  
+        <div class="col-1-grid-content col-3">
+            <img class="btn-col" src="" alt="">
+            <p>WEB DESIGN</p>
+            <p>I can design website through figma and develop it using code.</p>
+            <a href="" class="col-btn-1 col-btn"><img id="anchorbtn" src="right-arrow.png" alt=""></a>
+        </div>
+
+        <div class="col-2-grid-content col-3">
+            <img class="btn-col" src="" alt="">
+            <p>GRAPHIC DESIGN</p>
+            <p>Elevate your brand identity to reach its target audience</p>
+            <a href="" class="col-btn-2 col-btn"><img id="anchorbtn" src="right-arrow.png" alt=""></a>
+        </div>
+
+        <div class="col-3-grid-content col-3">
+            <img class="btn-col" src="" alt="">
+            <p>ILLUSTRATION</p>
+            <p>Create a character you want from scratch with its own appeal. </p>
+
+            <a href="" class="col-btn-3 col-btn"><img id="anchorbtn" src="right-arrow.png" alt=""></a>
+        </div>
+
+    </div>
+</div>
+
+
+<!-- Call to Action-section-->
+
+    <div class="CTA-section" id="CTA-bookmark">
+        <div class="context">
+            <h1>
+                Think I'd fit your business?<br>
+                Let's Talk
+            </h1>
+
+        <button class="CTA-btn">Send Message</button>
+           
+           
+        </div>
+
+       <form action="https://formsubmit.co/archeangana@gmail.com" method="POST">
+            <h3>Let's Talk</h3>
+            <input type="text" id="name" placeholder="Name" name="Name">
+
+            <input type="email" id="email" placeholder="Email" name="Email">
+
+            <input type="number" id="phone" placeholder="Phone no." name="Number">
+
+            <textarea id="message" rows="10" placeholder="How can we help you?" name="message" type="Message"></textarea>
+
+            <div class="cel-holder">
+                <button type="submit" class="cel1"> Send Message</button> 
+                <span class="cancel"> X </span>
+            </div>
+
+            <div class="design01"></div>
+            <div class="design02"></div>
+
+            <img class="form-img1" src="user2.png" alt="">
+            <img class="form-img2" src="email1.png" alt="">
+            <img class="form-img3" src="call.png" alt="">
+            <img class="form-img4" src="question.png" alt="">
+
+
+       </form>
+
+    </div>
+
+    <script>
+
+        const But = document.querySelector(".CTA-btn");
+        const form = document.querySelector("form");
+        const cancel = document.querySelector(".cancel");
+
+        But.onclick = function btnCel() {
+            if (form.style.transform = "scale(0)") {
+            form.style.transform = "scale(1)";
+            opaque.style.display = "block";
+            }
+        } 
+
+        cancel.onclick = function cancelBTN () {
+            form.style.transform = "scale(0)";
+            opaque.style.display = "none";
+        }
+
+
+
+    </script>
+
+<!-- CTA-boundary-->
+
+
+
+<!-- Footer -->
+    <div class="footer-wrapper" id="contact-cut">
+
+    <div class="footer-child-container">
+
+        <div class="child-wrapper1">
+
+                <span class="foot-txt1">BS Graphic & Design</span>
+        </div>
+
+        <div class="child-wrapper2">
+            <span class="foot-txt2">CTU Main-Campus</span>
+
+        </div>
+            
+        <div class="child-wrapper3">
+            <span class="foot-txt3">+63 9984596370</span>
+        </div>       
+
+
+        <div class="copyright">
+            <p> &copy; 2023 Arche. All Rights Reserved.</p>
+           
+        </div>
+    </div>
+
+
+    <button id="upButton" class="up-button" onclick="scrollToTop()"><img src="top.png" alt=""></button>
+
+
+    </div>
+
+
+
+    <!-- Reveal / upbutton -->
+
+<script>
+    window.addEventListener('scroll', function() {
+  var upButton = document.getElementById('upButton');
+  var scrollPosition = window.pageYOffset || document.documentElement.scrollTop;
+
+  if (scrollPosition > 1000) {
+    upButton.style.display = 'block';
+  } else {
+    upButton.style.display = 'none';
+  }
+});
+
+function scrollToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+</script>  
+
+<script>
+          
+    animateElement = (element,origin,delay) => {
+       
+        const sr = ScrollReveal({
+            delay: delay,
+            distance: '100px',
+            duration: 1000,
+            easing: 'ease',
+            origin: origin
+        });
+      
+        sr.reveal(element);{}
+    }
+    
+
+    animateElement(".about-job-child","left",500);
+    animateElement(".about-navigation","right",500);
+    animateElement(".about-txt-name","left", 400);
+    animateElement(".mainHeader","bottom", 300);
+    animateElement(".webDesign","bottom", 400);
+    animateElement(".GraphicDesign","bottom", 450);
+    animateElement(".HANDS-DRAW","bottom", 500);
+    animateElement(".ADOBE-AFTER-EFFECTS","bottom", 550);
+    animateElement(".htmlCSS","bottom", 600)
+    animateElement(".VIDEO-EDTTING","bottom", 650);
+    animateElement(".work-parag","top", 100);
+    animateElement(".holder-1","bottom", 300);
+    animateElement(".holder-2","bottom", 400);
+    animateElement(".holder-3","bottom", 500);
+    animateElement(".holder-4","bottom", 600);
+    animateElement(".holder-5","bottom", 700);
+    animateElement(".holder-6","bottom", 800);
+    animateElement(".illus","right", 500);
+    animateElement(".col-1-grid-content","bottom", 500);
+    animateElement(".col-2-grid-content","bottom", 650);
+    animateElement(".col-3-grid-content","bottom", 750);
+    
+</script>
+
+
+</body>
+</html>
