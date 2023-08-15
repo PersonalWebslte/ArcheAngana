@@ -4,90 +4,75 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ArchPortfolio</title>
+    <title>Arche Homepage</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="">
     <link rel="icon" href="web-icon.png">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
 </head>
-<body>
 
-   
+
+<body>
 
 <!-- Navigation Section and Hero-content-->
 
     <div class="container">
-        <div class="container-cover"></div>
         <div class="navbar" id="nav">
 
             <div id="main-logo">
 
-            <p class="main-logo"  onclick="location.href='#back'"> ARCHE </p>
+            <p class="main-logo"  onclick="location.href='#back'"> arche. </p>
             </div>
 
-            <i class="fa-solid fa-bars-progress"></i>
+            <img src="menu.png" class="menu-btn" alt="menu-bar">
 
             <ul id="sidemenu">
-                <img class="side-logo" src="main-logo.png" onclick="location.href='#back'">
-                <li><a href="#about-bookmark">about me</a></li>
-                <li><a href="#works">WORKS</a></li>
-                <li><a href="#services-bookmark">skills</a></li>
-                <li><a href="#contact-cut">contacts</a></li>
+
+                <li><a href="#nav">home</a></li>
+                <li><a href="aboutme.html">About me</a></li>
+                <li><a href="#works">Works</a></li>
+                <li><a href="#contact-cut">Get in touch </a></li>
          
                 <div class="exit-btn-special">
 
-                    <i class="fa-regular fa-x"></i>
+                   <img src="reject.png" alt="close-menu" class="reject-btn">
                 </div>  
-            </ul> 
-            
+            </ul>             
         
         </div>
 
 <!---------Script for navbar---------->
 
-        <script>
-
-            var sidemenu = document.getElementById('sidemenu');
-
-            var click = document.querySelector('.fa-solid');
-
-            var exit = document.querySelector('.fa-regular');
-
-            var exitBox = document.querySelector('.exit-btn');
+<script>
 
 
-        
-            click.onclick = function openside(){
+            const ulist = document.querySelector("ul");
+            const menu = document.querySelector(".menu-btn");
+            const reject = document.querySelector(".reject-btn");
 
-               sidemenu.style.left = "-25px";
-                exitBox.style.right = "-30px";
-               document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
-
+            menu.onclick = function openmenu() {
+                ulist.style.height = "60vh";
+                ulist.style.opacity = "1";
             }
 
-            exit.onclick = function closeside(){
-                sidemenu.style.left = "-170px";
-                exitBox.style.right = "0";
+            reject.onclick = function closemenu() {
+                ulist.style.height = "0";
+                ulist.style.opacity = "0";
             }
 
+</script>
 
+<!-- Hero Content-->
 
-        </script>
-
-<!------------------->
         <div class="hero-parent" id="back">
 
-            <div class="circle-1 object" data-value="-2"></div>
-            <div class="circle-2 object" data-value="6"></div>
-            <div class="circle-3 object" data-value="4"></div>
-            <div class="square object" data-value="-6"></div>
+            <div class="moon">
+                <img src="moon1.png" alt="">
+            </div>
 
             <span class="name"> Hello! I'm a <span class="color-txt"> </span></span>
 
@@ -95,20 +80,66 @@
                  <h1><span id="typing"></span></h1>
             </div>
 
-                <p> Aspiring Front-end Web Developer, Graphic Designer, and Illustrator. I can code and design a Website using HTML, CSS, and brief Javascript, I can also Illustrate, and Design a Digital Ads, Poster, and Digital Flyers.
+                <p> I code and design a website utilizing HTML, CSS, and Basic Javascript. I can also design Digital graphics and Printed Ads, Posters, and Flyers.
                 </p>
 
                 <div class="button-holder">
+               
+                    <button type="button" onclick="location.href='#works'" class="works-btn"> <span id="btn-txt" class="btn-txt-work"> See my Works </span> <img src="arrow-down.png" alt=""> </button>
+
                     <div class="btn-holder-child1">
-                        <a href="myCV.pdf" target="_blank" ><button type="button"class="resume-btn"> <span id="btn-txt">View Resume</span> <img src="foreign.png" alt=""></button> </a>
-                       
+                        <a href="myCV.pdf" target="_blank" ><button type="button"class="resume-btn"> <span id="btn-txt">View Resume</span> 
+                        <img src="foreign.png" alt=""></button> </a>
+                    </div>
                     </div>
 
-                    <button type="button" onclick="location.href='#works'" class="works-btn"> <span id="btn-txt"> See my Works </span> <img src="arrow-down.png" alt=""> </button>
+                <div class="images-holder">
 
-               
+                    <img class="holo" src="holo.png" alt="">
+
+                    <div class="holo-shadow"></div>
+
+                    <div class="star-holder">
+                    <div class="star1 stars"></div>
+                    <div class="star1 stars"></div>
+                    <div class="star1 stars"></div>
+                    <div class="star1 stars"></div>
+
+                    <div class="star2 stars"></div>
+                    <div class="star2 stars"></div>
+                    <div class="star2 stars"></div>
+
+                    <div class="star3 stars"></div>
+                    <div class="star3 stars"></div>
+                    <div class="star3 stars"></div>
+
+                    <div class="star4 stars"></div>
+                    <div class="star4 stars"></div>
+                    <div class="star4 stars"></div>
+
+                    <div class="star-far1 stars"></div>
+                    <div class="star-far2 stars"></div>
+                    <div class="star-far3 stars"></div>
+                    <div class="star-far4 stars"></div>
+                    <div class="star-far5 stars"></div>
+                    <div class="star-far6 stars"></div>
+                    <div class="star-far7 stars"></div>
+                    <div class="star-far7 stars"></div>
+                    <div class="star-far7 stars"></div>
+                    <div class="star-far8 stars"></div>
+                    <div class="star-far9 stars"></div>
+                    <div class="star-far10 stars"></div>
+                    <div class="star-far11 stars"></div>
+                    <div class="star-far12 stars"></div>
+                    </div>
+
+                 <div class="slider-container">
+                    <img src="webSymbol-01.png" alt="" class="child1 child">
+                    </div>
+            
                 </div>
-        
+
+
     </div>
         
             <!-- Script for Hero content-->
@@ -116,7 +147,7 @@
 
     var typed = new Typed('#typing', {
    strings: ["Web Designer", "Graphic Designer", "Illustrator"],
-   typeSpeed: 80,
+   typeSpeed: 100,
    backSpeed: 80,
    loop: true
  });
@@ -126,54 +157,33 @@
 
 <!-- Navigation Section and Hero-content END-->
 
-<!-- About-Section-->
-    <div class="primary-about-section" id="about-bookmark">
 
+<!-- What I can do section-->
+<div class="service-wrapper">
+    <h1>SERVICES I CAN DO</h1>
 
-            <div class="about-content">
+    <div class="service-grid-container">
 
-            <div class="about-txt-name">
-                <p> ABOUT ME </p>
-                <p id="myName"> I'M ARCHE M. ANGANA
-                <br></p>
-                <span class="job-title">WEB DESIGNER & GRAPHIC DESIGNER</span>
-                
-                    
-            </div>
-               
-        
-            <div class="about-navigation"> 
-            
-                <p> I am currently 3rd year BSGD student at CEBU TECHNOLOGICAL UNIVERSITY Main - Campus and a aspiring web designer and graphic designer. With my knowledge, I strive to give you with the best service possible. 
-                </p>
+        <div class="service1 serviceholder">
+            <img id="service-img" src="webdesign.png" alt="">
+                <h3>Web Design</h3>
+                <p>Designing website from start to end for your needs. I can also design a prototype.</p> 
+        </div>
 
-                <br>
+        <div class="service2 serviceholder">
+            <img id="service-img" src="Graphic.png" alt="">
+                <h3>Graphic Design</h3>
+                <p>Creating eye-catching posters, flyers, and digital advertisements. </p>  
+        </div>
 
-                <p> I have a desire for knowledge and a commitment to put that knowledge into action. My passion for understanding the complexities of web design/development and Graphic Design drives my belief that mindfulness in the workplace is key to success. I, too, consider myself a "forever student," ready to learn new design approaches and techniques while keeping up with design trends. </p>
+        <div class="service3 serviceholder">
+            <img id="service-img" src="htmlcss.png" alt="">
+                <h3>HTML/CSS</h3>
+                <p>I can code website designs that are responsive to various screen sizes.</p>
+        </div>
+        </div>
 
-                <p class="media-head">CHECK OUT MY SOCIALS</p>
-
-                <div class="media-section">
-
-                    <div class="img-holder">
-                        <a href="https://www.behance.net/archeangana" target="_blank"><img class="media-img-1 media" src="behance.png" alt="behance"></a>
-                    </div>
-
-                    <div class="img-holder">
-                        <a href="https://twitter.com/arch__01" target="_blank"><img class="media-img-2 media" src="twitter-nobg.png" alt=""></a>
-                    </div>
-
-                    <div class="img-holder">
-                        <a href="https://www.linkedin.com/in/arche-angana-8a3297232/" target="_blank"><img class="media-img-3 media" src="linkedin.png" alt=""></a>
-                    </div>
-
-                </div>
-               
-            </div>
-            </div>  
-            </div>
-            
-<!-- About-Section boundary-->
+</div>
 
 <!-- My Skills Section -->
             
@@ -195,7 +205,7 @@
                    <div class="GraphicDesign Grid">
                     <div class="header-wrapper">
                     <div class="oval"></div>
-                    <h2 class="header-2 grid-header">GRAPHIC DESIGN</h2> </div>
+                    <h2 class="header-2 grid-header">GRAPHIC DESIGN LAYOUT</h2> </div>
 
                     <p class="par-2 par">The art of communication, stylizing, and problem solving through the use of type and image.</p> 
                    </div>
@@ -244,77 +254,67 @@
 <div class="new-skill-container">
 
     <div class="division-txt">
-        <h3> Software Expertise </h3>
-        <p>I can use well enough the softwares below</p>
+        <h2> Software Expertise </h2>
     </div>
   
-
     <div class="division-wrapper">
-
-    <div class="divition-1">
-        <span><img src="illustrator.png" alt="Adobe Illustrator"></span>
-        <span><img src="visual-studio.png" alt="VS Code"></span>
-        <span><img src="solidoworklogo.png" alt="Solidworks"></span>
-        <span><img src="after-effects.png" alt="Adobe After Effects"></span>
+        <div class="icon"><img src="icon_Ai.png" alt="Adobe Illustrator"> <p> Adobe Illustrator </p></div>
+        <div class="icon"><img src="icon_Id.png" alt="Adobe Indesign"> <p> Adobe InDesign </p></div>
+        <div class="icon"><img src="icon_Ps.png" alt="Photoshop"> <p> Adobe Photoshop </p></div>
+        <div class="icon"><img src="icon_XD.png" alt=" Adobe XD"> <p> Adobe Xd </p></div>
+        <div class="icon"><img src="icon_VS.png" alt="Visual Studio Code"> <p> Visual Studio Code </p></div>         
     </div>
-
-    <div class="division-2">
-        <span><img src="indesign.png" alt="Adobe Indesign"></span>
-        <span><img src="coreldraw.png" alt="Corel Draw"></span>
-        <span><img src="figma.png" alt="Figma"></span>
-        <span><img src="office.png" alt="MS Office"></span>
-    </div>
-            
-</div>
 
 </div>
 
 
 <!-- The Works -->
+
 <div class="works-container" id="works">
 
     <div class="work-header">
-        <h1> Works </h1>
-        <p class="work-parag">All of my design work, from websites to brochures for marketing, is available here. Check them out, especially the information on my design approach and specifics. </p>
+        <h1> PORTFOLIO </h1>
+        <p class="work-parag"></p>
     </div>
 
     <div class="works-grid">
         
         <div class="works-content holder-1">
-            <img class="light" onclick="lightBox()" src="Fit Arc.png" alt="">
-            <p class="work-txt-header">BRAND DESIGN</p>
-            <p class="work-txt">Lorem ipsum dolor sit amet </p>
+            <img class="light" onclick="lightBox()" src="SteakHouse1-01.png" alt="">
+            <p class="work-txt-header">MARKETING WEBSITE</p>
+            <p class="work-txt">Personal Project</p>
         </div>
 
         <div class="works-content holder-2">
-            <img class="light" onclick="lightBox2()" src="Fit Arc.png" alt="">
-            <p class="work-txt-header">BRAND DESIGN</p>
-            <p class="work-txt">Lorem ipsum dolor sit amet </p>
+            <img class="light" onclick="lightBox2()" src="Fashion.gif" alt="">
+            <p class="work-txt-header">E-COMMERCE WEBSITE</p>
+            <p class="work-txt">Personal Project </p>
         </div>
 
         <div class="works-content holder-3">
-            <img class="light" onclick="lightBox3()" src="Fit Arc.png" alt="">
-            <p class="work-txt-header">BRAND DESIGN</p>
-            <p class="work-txt">Lorem ipsum dolor sit amet </p>
+            <img class="light" onclick="lightBox3()" src="Web3.jpg" alt="">
+            <p class="work-txt-header">E-COMMERCE WEBSITE</p>
+            <p class="work-txt">Personal Project</p>
         </div>
 
         <div class="works-content holder-4">
-            <img class="light" onclick="lightBox4()" src="Fit Arc.png" alt="">
-            <p class="work-txt-header">BRAND DESIGN</p>
-            <p class="work-txt">Lorem ipsum dolor sit amet </p>
+            <img class="light" onclick="lightBox4()" src="web4.jpg" alt="">
+            <p class="work-txt-header">BUSINESS WEBSITE</p>
+            <p class="work-txt">Personal Project </p>
         </div>
 
         <div class="works-content holder-5">
-            <img class="light" onclick="lightBox5()" src="Fit Arc.png" alt="">
-            <p class="work-txt-header">BRAND DESIGN</p>
-            <p class="work-txt">Lorem ipsum dolor sit amet </p>
+            <img class="light" onclick="lightBox5()" src="web5.jpg" alt="">
+            <p class="work-txt-header">COMMERCIAL WEBSITE</p>
+            <p class="work-txt">Personal Project</p>
         </div>
 
         <div class="works-content holder-6">
-            <img class="light" onclick="lightBox6()" src="Fit Arc.png" alt="">
-            <p class="work-txt-header">BRAND DESIGN</p>
-            <p class="work-txt">Lorem ipsum dolor sit amet </p>
+            <img class="light" onclick="lightBox6()" src="web6.jpg" alt="">
+            <p class="work-txt-header">MARKETING/BUSINESS WEBSITE</p>
+            <p class="work-txt">Personal Project </p>
         </div>
+
     </div>
     </div>
 
@@ -322,7 +322,8 @@
 <div class="lighbox-holder-main-container">
 
 <div class="lightbox-container-1 beholder">
-    <div class="lightbox-content lighter">    
+    <div class="lightbox-content lighter">
+        <img src="SteakHouse1-01.png" alt="">    
     </div>
 
     <button class="lightbox-exit out">X</button>
@@ -333,7 +334,8 @@
  <!-- 2 Light box parent-->
 
 <div class="lightbox-container-2 beholder">
-   <div class="lightbox-content-2 lighter">    
+   <div class="lightbox-content-2 lighter">
+    <img src="Fashion.gif" alt="">     
     </div>
             
     <button class="lightbox-exit-2 out">X</button>
@@ -346,7 +348,8 @@
      <!-- 3 Light box parent-->
 
 <div class="lightbox-container-3 beholder">
-    <div class="lightbox-content-3 lighter">    
+    <div class="lightbox-content-3 lighter">
+        <img class="web3" src="Web3.jpg" alt="">     
      </div>
              
      <button class="lightbox-exit-3 out">X</button>
@@ -355,7 +358,8 @@
     <!-- 4 Light box parent-->
 
 <div class="lightbox-container-4 beholder">
-    <div class="lightbox-content-4 lighter">    
+    <div class="lightbox-content-4 lighter">
+        <img src="web4.jpg" alt="">      
      </div>
              
      <button class="lightbox-exit-4 out">X</button>
@@ -364,7 +368,8 @@
      <!-- 5 Light box parent-->
 
 <div class="lightbox-container-5 beholder">
-    <div class="lightbox-content-5 lighter">    
+    <div class="lightbox-content-5 lighter">
+        <img src="web5.jpg" alt="">      
      </div>
              
      <button class="lightbox-exit-5 out">X</button>
@@ -373,7 +378,8 @@
     <!-- 6 Light box parent-->
 
 <div class="lightbox-container-6 beholder">
-    <div class="lightbox-content-6 lighter">    
+    <div class="lightbox-content-6 lighter">
+        <img src="web6.jpg" alt="">      
      </div>
              
      <button class="lightbox-exit-6 out"><p>X</p></button>
@@ -511,6 +517,14 @@
         }}
 
 </script>
+
+
+        <!-- Mock ups -->
+
+        <div class="mock_up_container">
+            <video src="FInal Shot.mp4" style="width: 300px; height: 500px" autoplay loop muted></video>
+            
+        </div>
 
 <!-- Illustration Section -->
 
@@ -829,7 +843,7 @@ function showSlides(n) {
 
 <!-- Specialty Boundary -->
 
-<div class="col-3-grid-wrapper">
+<div class="col-3-grid-wrapper" id="col-3">
 
     <div class="special-header">
         <h1 class="col-3-txt">SPECIALIZATION</h1>
@@ -1004,27 +1018,27 @@ function scrollToTop() {
     }
     
 
-    animateElement(".about-job-child","left",500);
-    animateElement(".about-navigation","right",500);
-    animateElement(".about-txt-name","left", 400);
-    animateElement(".mainHeader","bottom", 300);
-    animateElement(".webDesign","bottom", 400);
-    animateElement(".GraphicDesign","bottom", 450);
-    animateElement(".HANDS-DRAW","bottom", 500);
-    animateElement(".ADOBE-AFTER-EFFECTS","bottom", 550);
-    animateElement(".htmlCSS","bottom", 600)
-    animateElement(".VIDEO-EDTTING","bottom", 650);
-    animateElement(".work-parag","top", 100);
-    animateElement(".holder-1","bottom", 300);
-    animateElement(".holder-2","bottom", 400);
-    animateElement(".holder-3","bottom", 500);
-    animateElement(".holder-4","bottom", 600);
-    animateElement(".holder-5","bottom", 700);
-    animateElement(".holder-6","bottom", 800);
-    animateElement(".illus","right", 500);
-    animateElement(".col-1-grid-content","bottom", 500);
-    animateElement(".col-2-grid-content","bottom", 650);
-    animateElement(".col-3-grid-content","bottom", 750);
+    // animateElement(".about-job-child","left",500);
+    // animateElement(".about-navigation","right",500);
+    // animateElement(".about-txt-name","left", 400);
+    // animateElement(".mainHeader","bottom", 300);
+    // animateElement(".webDesign","bottom", 400);
+    // animateElement(".GraphicDesign","bottom", 450);
+    // animateElement(".HANDS-DRAW","bottom", 500);
+    // animateElement(".ADOBE-AFTER-EFFECTS","bottom", 550);
+    // animateElement(".htmlCSS","bottom", 600)
+    // animateElement(".VIDEO-EDTTING","bottom", 650);
+    // animateElement(".work-parag","top", 100);
+    // animateElement(".holder-1","bottom", 300);
+    // animateElement(".holder-2","bottom", 400);
+    // animateElement(".holder-3","bottom", 500);
+    // animateElement(".holder-4","bottom", 600);
+    // animateElement(".holder-5","bottom", 700);
+    // animateElement(".holder-6","bottom", 800);
+    // animateElement(".illus","right", 500);
+    // animateElement(".col-1-grid-content","bottom", 500);
+    // animateElement(".col-2-grid-content","bottom", 650);
+    // animateElement(".col-3-grid-content","bottom", 750);
     
 </script>
 
